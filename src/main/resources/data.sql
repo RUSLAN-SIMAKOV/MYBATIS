@@ -1,7 +1,4 @@
-CREATE SCHEMA IF NOT EXISTS USERS;
 CREATE TABLE IF NOT EXISTS USERS(id BIGINT AUTO_INCREMENT, name VARCHAR(50) NOT NULL);
-set @a=scope_identity();
-select @a := scope_identity();
 
 INSERT INTO USERS(id, name) VALUES (1, 'Ramesh');
 INSERT INTO USERS(id, name) VALUES (2, 'Khilan');
